@@ -17,40 +17,42 @@ import Me_icons from '../icons/Titulos/Me_icon.astro'
 import Section_sobremi from '../components/Section_sobremi.astro'
 import Footer from '../components/Footer.astro'
 import Discord from '../icons/Social/Discord.astro'
+import Stackoverflow from '../icons/Social/Stackoverflow.astro'
 import Section_certificados from '../components/Section_certificados.astro';
 ---
 
-<Layout title="Portfolio de Pietro - Programador Full-Stack"
+<Layout title="Portfolio - Programador Full-Stack"
 description="Mi objetivo es aprender y mejorar constantemente, participando en proyectos innovadores que me permitan ampliar mis conocimientos y aportar soluciones creativas y efectivas.">
 	<main class="px-4">
 		<Section>
 			<img class="rounded-full w-20 h-20 mb-4" 
-			src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHY5M3prNjdmdXV0YmVtMmlxNGNtc3pwNXplOGViMXl0cGFuc3JuNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fc4CgGnZOktRm/giphy.gif" alt="Pietro"
+			src="https://media.licdn.com/dms/image/v2/C5603AQFn0bXSStrMUg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517275908453?e=1755734400&v=beta&t=ZLMXDKhfueCDhT8jX5_kOQDk8kj281ENrGhNeGFKah0" alt="Roy Parejo"
 			/> 
 		<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">
-			Hola, Soy Pietro 
-			<a href="https://www.linkedin.com/in/pietrobonacossa" target="_blank" rel="noopener"> <div class="flex justify-center items-center hover:scale-110 transition">
+			Hola, Soy Roy 
+			<!-- <a href="https://www.linkedin.com/in/pietrobonacossa" target="_blank" rel="noopener"> <div class="flex justify-center items-center hover:scale-110 transition">
 				<Badge> Open To Work </Badge>
-			</div><a/></h1>
+			</div><a/> -->
+		</h1>
 		<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-{700px}">
-			<span class="text-blue-300">Programador Full-Stack.</span> <br>Tengo 20 años, soy de Tucumán, Argentina 🧉. Me especializo en tecnología y desarrollo de software, siempre buscando aprender y mejorar. Mi objetivo es participar en proyectos innovadores que amplíen mis conocimientos y permitan aportar soluciones creativas y efectivas.
+			<span class="text-blue-300">Flutter Developer.</span> <br>Soy ingeniero de Sistemas con más de 9 años de experiencia en desarrollo de Software. He desarrollado desde aplicaciones de escritorio, web y actualmente enfocado en aplicaciones móviles multiplataforma bajo metodología tradicional y ágiles como SCRUM.
 		</h2>
 		<nav class="flex gap-x-5 mt-6 flex-wrap">
-			<Social_icons href="https://www.linkedin.com/in/pietrobonacossa">
+			<Social_icons href="https://www.linkedin.com/in/rparejo/">
 				<Linkedin class="size-4 md:size-6"/>
 				LinkedIn
 			</Social_icons>
-			<Social_icons href="https://github.com/Pietro923">
+			<Social_icons href="https://github.com/freddgz">
 				<Github class="size-4 md:size-6"/>
 				GitHub
 			</Social_icons>
-			<Social_icons href="mailto:jpbonacossa@gmail.com">
+			<Social_icons href="mailto:freddzg@gmail.com">
 				<Gmail class="size-4 md:size-6"/>
-				jpbonacossa@gmail.com
+				freddzg@gmail.com
 			</Social_icons>
-			<Social_icons href="https://discord.com/users/222491467275436033">
-				<Discord class="size-4 md:size-6"/>
-				Bonacxito
+			<Social_icons href="https://stackoverflow.com/users/4050770/roy-parejo">
+				<Stackoverflow class="size-4 md:size-6"/>
+				stack overflow
 			</Social_icons>
 		</nav>
 		</Section>
@@ -63,12 +65,6 @@ description="Mi objetivo es aprender y mejorar constantemente, participando en p
 			</div>
 			<Proyectos/>
 		</Section>
-		<Section_certificados id="certificados">
-			<div class="flex justify-center">
-				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Cert_icon class="size-8 "/>Certificados </h2>
-			</div>
-			<Certificados/>
-		</Section_certificados>
 		<Section_sobremi id="sobre_mi">
 			<div class="flex justify-center">
 				<h2 class="text-4xl font-semibold pb-10 flex gap-x-3 items-center text-center mb-4"> <Me_icons class="size-8 "/>Sobre mí </h2>
