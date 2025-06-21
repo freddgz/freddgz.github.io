@@ -6,6 +6,8 @@ import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
+import Playstore from "../icons/Social/Playstore.astro";
+import Appstore from "../icons/Social/Appstore.astro";
 
 const TAGS = {
   Html: {
@@ -59,13 +61,21 @@ const PROJECTS = [
     image: "/projects/proyecto2.webp",
     tags: [TAGS.Html, TAGS.Css, TAGS.Js],
     playstore: "https://play.google.com/store/apps/details?id=com.simplifica.puntos",
-    appstore: ""
+  },
+  {
+    title: "Plaza 4",
+    description: "Pagina creada con el objetivo de usar API del clima y probar su funcionamiento. Se utilizo Html, Css y JS",
+    link: "#",
+    github: "https://github.com/Pietro923/api-del-clima",
+    image: "/projects/proyecto2.webp",
+    tags: [TAGS.Html, TAGS.Css, TAGS.Js],
+    playstore: "https://play.google.com/store/apps/details?id=com.simplifica.puntos",
   },
 ];
 ---
 
 <div class="flex flex-col gap-y-16">
-  {PROJECTS.map(({ image, title, description, tags, link, github }) => (
+  {PROJECTS.map(({ image, title, description, tags, link, github, playstore, appstore }) => (
     <article class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0">
       <div class="w-full md:w-1/2 flex items-center group">
         <div class="relative flex flex-col items-center transition duration-500 ease-in-out transform shadow-xl overflow-hidden rounded-xl sm:rounded-xl lg:border lg:border-gray-800 group-hover:shadow-2xl">
@@ -101,6 +111,18 @@ const PROJECTS = [
             <Social_icons href={link}>
               <Link class="size-4" />
               Preview
+            </Social_icons>
+          )}
+          {playstore && (
+            <Social_icons href={playstore}>
+              <Playstore class="size-4" />
+              Google Play
+            </Social_icons>
+          )}
+          {appstore && (
+            <Social_icons href={appstore}>
+              <Appstore class="size-4" />
+              App Store
             </Social_icons>
           )}
         </footer>
