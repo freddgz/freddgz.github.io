@@ -3,6 +3,9 @@ import Html from "../icons/Tecnologias/Lenguajes/Html.astro";
 import Css from "../icons/Tecnologias/Lenguajes/Css.astro";
 import Js from "../icons/Tecnologias/Lenguajes/Js.astro";
 import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
+import Firebase from "../icons/Tecnologias/Frameworks_Librerias/Firebase.astro";
+import Android from "../icons/Tecnologias/Frameworks_Librerias/Android.astro";
+import Sqlite from "../icons/Tecnologias/Bases_de_datos/Sqlite.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
@@ -40,24 +43,33 @@ const TAGS = {
     class: "bg-[#1c7777] text-white",
     icon: React,
   },
+  Firebase: {
+    name: "Firebase",
+    class: "bg-[#1c7777] text-white",
+    icon: Firebase,
+  },
+  Sqlite: {
+    name: "Sqlite",
+    class: "bg-[#1c7777] text-white",
+    icon: Sqlite,
+  },
 };
 
 const PROJECTS = [
   {
     title: "Simplifica Repartos",
     description: "Es una herramienta diseñada para gestionar y coordinar la entrega de productos o mercancías de manera eficiente. Con esta aplicación, los encargados de los despachos pueden planificar rutas, asignar entregas, registrar el estado de cada envío y hacer seguimiento en tiempo real",
-    link: "#",
-    github: "https://github.com/Pietro923/Programacion",
+    link: "",
     image: "/projects/proyecto1.webp",
     tags: [TAGS.Html, TAGS.Css, TAGS.Js, TAGS.React],
     playstore: "https://play.google.com/store/apps/details?id=com.simplifica.solicitudes",
-    appstore: ""
+    appstore: "https://play.google.com/store/apps/details?id=com.simplifica.puntos"
   },
   {
     title: "Plaza 4",
     description: "Pagina creada con el objetivo de usar API del clima y probar su funcionamiento. Se utilizo Html, Css y JS",
-    link: "#",
-    github: "https://github.com/Pietro923/api-del-clima",
+    link: "",
+    github: "",
     image: "/projects/proyecto2.webp",
     tags: [TAGS.Html, TAGS.Css, TAGS.Js],
     playstore: "https://play.google.com/store/apps/details?id=com.simplifica.puntos",
@@ -65,11 +77,11 @@ const PROJECTS = [
   {
     title: "Plaza 4",
     description: "Pagina creada con el objetivo de usar API del clima y probar su funcionamiento. Se utilizo Html, Css y JS",
-    link: "#",
-    github: "https://github.com/Pietro923/api-del-clima",
+    link: "",
+    github: "",
     image: "/projects/proyecto2.webp",
     tags: [TAGS.Html, TAGS.Css, TAGS.Js],
-    playstore: "https://play.google.com/store/apps/details?id=com.simplifica.puntos",
+    appstore: "https://play.google.com/store/apps/details?id=com.simplifica.puntos",
   },
 ];
 ---
