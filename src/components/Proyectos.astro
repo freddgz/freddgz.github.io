@@ -2,10 +2,12 @@
 import Html from "../icons/Tecnologias/Lenguajes/Html.astro";
 import Css from "../icons/Tecnologias/Lenguajes/Css.astro";
 import Dart from "../icons/Tecnologias/Lenguajes/Dart.astro";
+import Java from "../icons/Tecnologias/Lenguajes/Java.astro";
 import Js from "../icons/Tecnologias/Lenguajes/Js.astro";
 import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
 import Firebase from "../icons/Tecnologias/Frameworks_Librerias/Firebase.astro";
 import Flutter from "../icons/Tecnologias/Frameworks_Librerias/Flutter.astro";
+import Android from "../icons/Tecnologias/Frameworks_Librerias/Android.astro";
 import Sqlite from "../icons/Tecnologias/Bases_de_datos/Sqlite.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
@@ -54,6 +56,16 @@ const TAGS = {
     class: "bg-[#000] text-white",
     icon: Sqlite,
   },
+  Android: {
+    name: "Android",
+    class: "bg-[#0e5e24] text-white",
+    icon: Android,
+  },
+  Java: {
+    name: "Java",
+    class: "bg-[#fff] text-black",
+    icon: Java,
+  },
 };
 
 const PROJECTS = [
@@ -81,9 +93,29 @@ const PROJECTS = [
     description: "Registro de asistencia usando la cámara y ubicación GPS.",
     link: "",
     github: "",
-    image: "/projects/proyecto2.webp",
+    image: "/projects/app-ubicacion.webp",
     tags: [TAGS.Dart, TAGS.Flutter],
     playstore: "https://play.google.com/store/apps/details?id=com.createksystem.assist_app",
+    appstore: "",
+  },
+  {
+    title: "Himnario Adventista SMI",
+    description: "Registro de asistencia usando la cámara y ubicación GPS.",
+    link: "",
+    github: "",
+    image: "/projects/app-himnario.webp",
+    tags: [TAGS.Dart, TAGS.Flutter],
+    playstore: "https://play.google.com/store/apps/details?id=com.createksystem.himnarioamr",
+    appstore: "",
+  },
+  {
+    title: "GZampu zampoña",
+    description: "Registro de asistencia usando la cámara y ubicación GPS.",
+    link: "",
+    github: "",
+    image: "/projects/app-gzampu.webp",
+    tags: [TAGS.Android, TAGS.Sqlite],
+    playstore: "https://play.google.com/store/apps/details?id=com.rparejo.zamponia",
     appstore: "",
   },
 ];
